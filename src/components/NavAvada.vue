@@ -6,7 +6,7 @@
           <div class="wrapper_img">
             <img
               class="w-100"
-              src="@/assets/img/avada-marketing-logo-2x.png"
+              src="@/assets/img/avada-marketing-logo-2x-400x74.png"
               alt="avada-marketing-logo"
             />
           </div>
