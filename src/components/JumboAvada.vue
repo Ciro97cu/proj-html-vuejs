@@ -104,9 +104,12 @@ export default {
         color: $color-Ecstasy;
         font-weight: 500;
       }
-
-      input::placeholder {
-        color: $color-Tundora;
+      input {
+        border: 2px solid $color-Gray-Nurse;
+        border-radius: 5px;
+        &::placeholder {
+          color: $color-Tundora;
+        }
       }
 
       .submit {
