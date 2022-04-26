@@ -80,7 +80,7 @@ export default {
   }
 
   .submit {
-    @include button($color-Ecstasy, white, $color-Ecstasy-Op, black);
+    @include button($color-Ecstasy, white, $color-Tango, black);
   }
   p:last-child {
     font-size: 12px;

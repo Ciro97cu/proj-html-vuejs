@@ -1,10 +1,16 @@
 <template>
-  <div>prova</div>
+  <main>
+    <IntroductionSection />
+  </main>
 </template>
 
 <script>
+import IntroductionSection from "./IntroductionSection.vue";
 export default {
   name: "MainAvada",
+  components: {
+    IntroductionSection,
+  },
 };
 </script>
 

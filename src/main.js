@@ -6,10 +6,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faPhone, faChevronDown, faArrowRight)
+library.add(faPhone, faChevronDown, faArrowRight, faCircleCheck)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
