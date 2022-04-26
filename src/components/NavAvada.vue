@@ -15,7 +15,7 @@
           <ul>
             <li
               class="d-inline-block px-2"
-              v-for="item in arrayNav"
+              v-for="item in navLink"
               :key="item.name"
             >
               {{ item.name }}
@@ -39,10 +39,14 @@
 </template>
 
 <script>
+import navLink from "@/assets/data/navLink";
+
 export default {
   name: "NavAvada",
-  props: {
-    arrayNav: Array,
+  data() {
+    return {
+      navLink,
+    };
   },
 };
 </script>

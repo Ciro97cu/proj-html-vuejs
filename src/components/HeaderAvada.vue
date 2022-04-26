@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavAvada class="bg-white" :arrayNav="arrayNav" />
+    <NavAvada class="bg-white" />
     <JumboAvada />
   </div>
 </template>
@@ -14,36 +14,6 @@ export default {
   components: {
     NavAvada,
     JumboAvada,
-  },
-  data() {
-    return {
-      arrayNav: [
-        {
-          name: "Home",
-          dropdown: true,
-        },
-        {
-          name: "Services",
-          dropdown: true,
-        },
-        {
-          name: "Why US",
-          dropdown: false,
-        },
-        {
-          name: "Case Studies",
-          dropdown: false,
-        },
-        {
-          name: "About",
-          dropdown: false,
-        },
-        {
-          name: "Blog",
-          dropdown: false,
-        },
-      ],
-    };
   },
 };
 </script>

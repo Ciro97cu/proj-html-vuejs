@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Home",
+        "dropdown": true
+    },
+    {
+        "name": "Services",
+        "dropdown": true
+    },
+    {
+        "name": "Why US",
+        "dropdown": false
+    },
+    {
+        "name": "Case Studies",
+        "dropdown": false
+    },
+    {
+        "name": "About",
+        "dropdown": false
+    },
+    {
+        "name": "Blog",
+        "dropdown": false
+    }
+]
