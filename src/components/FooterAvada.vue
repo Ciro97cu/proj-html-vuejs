@@ -1,5 +1,5 @@
 <template>
-  <div>prova</div>
+  <div class="bg-danger">prova</div>
 </template>
 
 <script>
