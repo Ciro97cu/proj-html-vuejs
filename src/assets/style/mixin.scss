@@ -1,0 +1,20 @@
+@mixin button($bgColor, $color, $bgColorHover) {
+    background-color: $bgColor;
+    color: $color;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 20px;
+
+    &:hover {
+        background-color: $bgColorHover;
+        color: white;
+    }
+}
+
+@mixin navHover($colorHover) {
+    &:hover {
+        color: $colorHover;
+        border-bottom: 1px solid $colorHover;
+        cursor: pointer;
+    }
+}
