@@ -14,7 +14,7 @@
           <p>{{ person.info }}</p>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center pb-5">
         <button class="btn col-auto">Read More Case Studies</button>
       </div>
     </div>
