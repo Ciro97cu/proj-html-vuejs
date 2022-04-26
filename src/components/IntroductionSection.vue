@@ -1,16 +1,22 @@
 <template>
   <div>
-    <generalCardInfo />
+    <GeneralInfo />
+    <GeneralBrands />
+    <GeneralTrust />
   </div>
 </template>
 
 <script>
-import generalCardInfo from "./generalCardInfo.vue";
+import GeneralInfo from "./GeneralInfo.vue";
+import GeneralBrands from "./GeneralBrands.vue";
+import GeneralTrust from "./GeneralTrust.vue";
 
 export default {
   name: "IntroductionSection",
   components: {
-    generalCardInfo,
+    GeneralInfo,
+    GeneralBrands,
+    GeneralTrust,
   },
 };
 </script>

@@ -72,7 +72,7 @@
 
 <script>
 export default {
-  name: "generalCardInfo",
+  name: "GeneralInfo",
 };
 </script>
 

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "path": "case-studies-1.jpg",
+        "title": "How Spaces attracted five million visitors by improving the content",
+        "value": "200%",
+        "info": "Higher revenue from digital"
+    },
+    {
+        "id": 2,
+        "path": "case-studies-4.jpg",
+        "title": "Creativity helped Hemisferio to increase their brand reach vertically",
+        "value": "10x",
+        "info": "Sales increase with the same ad spend"
+    },
+    {
+        "id": 3,
+        "path": "case-studies-6.jpg",
+        "title": "How DigitalBox used Al-powered data insight to boost sales",
+        "value": "3-year",
+        "info": "Partnership with Avada Consultant"
+    }
+]
