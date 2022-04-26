@@ -1,13 +1,13 @@
-@mixin button($bgColor, $color, $bgColorHover) {
+@mixin button($bgColor, $color, $bgColorHover, $colorHover) {
     background-color: $bgColor;
     color: $color;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     padding: 10px 20px;
 
     &:hover {
         background-color: $bgColorHover;
-        color: white;
+        color: $colorHover;
     }
 }
 

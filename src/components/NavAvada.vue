@@ -73,6 +73,6 @@ li {
 }
 
 button {
-  @include button($color-Ecstasy-Op, $color-Ecstasy, $color-Ecstasy);
+  @include button($color-Ecstasy-Op, $color-Ecstasy, $color-Ecstasy, white);
 }
 </style>
