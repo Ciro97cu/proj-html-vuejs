@@ -74,6 +74,7 @@ export default {
 
   .row {
     min-height: 700px;
+    position: relative;
 
     .col-sm-6 {
       h1 {
@@ -91,6 +92,10 @@ export default {
     }
 
     .col-sm-4 {
+      position: absolute;
+      bottom: -10%;
+      right: 0;
+      box-shadow: 0px 10px 21px 10px rgba(0, 0, 0, 0.2);
       .wrapper_img {
         width: 70px;
       }
