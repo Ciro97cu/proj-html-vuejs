@@ -54,7 +54,7 @@ export default {
         this.data.push({
           agent: "bot",
           type: "text",
-          text: "Hello. How can I help you",
+          text: "Hello. How can I help you?",
         });
       }, 1000);
     },
