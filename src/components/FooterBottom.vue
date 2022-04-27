@@ -15,13 +15,69 @@
           <em>info@yourcompany.com</em>
         </div>
       </div>
+      <VueBotUI
+        :messages="data"
+        :options="botOptions"
+        @init="botStart"
+        @msg-send="msgSend"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import { VueBotUI } from "vue-bot-ui";
+
 export default {
   name: "FooterBottom",
+  components: {
+    VueBotUI,
+  },
+  data() {
+    return {
+      data: [],
+      botOptions: {
+        botTitle: "Avada Kedavra Bot",
+        colorScheme: "#f76210",
+        msgBubbleBgBot: "#424242",
+        msgBubbleColorBot: "#fff",
+        msgBubbleBgUser: "#f76210",
+        msgBubbleColorUser: "#fff",
+      },
+    };
+  },
+  methods: {
+    botStart() {
+      this.botTyping = true;
+      setTimeout(() => {
+        this.botTyping = false;
+        this.data.push({
+          agent: "bot",
+          type: "text",
+          text: "Hello. How can I help you",
+        });
+      }, 1000);
+    },
+    msgSend(value) {
+      this.data.push({
+        agent: "user",
+        type: "text",
+        text: value.text,
+      });
+      this.getResponse();
+    },
+    getResponse() {
+      this.botTyping = true;
+      setTimeout(() => {
+        this.botTyping = false;
+        this.data.push({
+          agent: "bot",
+          type: "text",
+          text: "Chat is temporarily unavailable. Try again later, or ask Ciro Cusati",
+        });
+      }, 1000);
+    },
+  },
 };
 </script>
 
