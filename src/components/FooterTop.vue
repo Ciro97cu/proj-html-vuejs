@@ -8,7 +8,7 @@
             Retention.
           </h2>
           <div class="d-flex gap-3">
-            <a v-for="icon in socialIcon" :key="icon.id" href="icon.link">
+            <a v-for="icon in socialIcon" :key="icon.id" :href="icon.link">
               <font-awesome-icon :icon="['fa-brands', icon.icon]" />
             </a>
           </div>
