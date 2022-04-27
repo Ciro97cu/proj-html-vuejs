@@ -3,6 +3,7 @@
     <IntroductionSection />
     <PlanSection />
     <TeamSection />
+    <MarketingSection />
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import IntroductionSection from "./IntroductionSection.vue";
 import PlanSection from "./PlanSection.vue";
 import TeamSection from "./TeamSection.vue";
+import MarketingSection from "./MarketingSection.vue";
 
 export default {
   name: "MainAvada",
@@ -17,6 +19,7 @@ export default {
     IntroductionSection,
     PlanSection,
     TeamSection,
+    MarketingSection,
   },
 };
 </script>
