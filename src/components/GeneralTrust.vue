@@ -4,11 +4,14 @@
       <h2 class="text-center pb-5">Trusted by Leading Organizations</h2>
       <div class="row pb-5">
         <div class="col-sm-4" v-for="person in trust" :key="person.id">
-          <img
-            class="w-100 pb-4"
-            :src="require(`../assets/img/${person.path}`)"
-            :alt="person.id"
-          />
+          <div class="wrapper_img">
+            <img
+              class="w-100 pb-4"
+              :src="require(`../assets/img/${person.path}`)"
+              :alt="person.id"
+            />
+            <div class="filter_img"></div>
+          </div>
           <h4 class="pb-4">{{ person.title }}</h4>
           <h3 class="pb-2">{{ person.value }}</h3>
           <p>{{ person.info }}</p>
@@ -44,6 +47,10 @@ h2 {
 }
 
 .col-sm-4 {
+  .wrapper_img {
+    @include imgHover($color-Ecstasy, 85.3%);
+  }
+
   h4 {
     font-size: 25px;
   }

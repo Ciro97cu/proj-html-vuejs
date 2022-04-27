@@ -18,3 +18,24 @@
         cursor: pointer;
     }
 }
+
+@mixin imgHover($colorHover, $height) {
+
+    position: relative;
+    height: 80%;
+    width: 100%;
+
+    &:hover img {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &:hover .filter_img {
+        position: absolute;
+        z-index: 10;
+        height: $height;
+        width: 100%;
+        box-shadow: 0px -200px 400px -200px rgba($colorHover, 1) inset;
+    }
+
+}

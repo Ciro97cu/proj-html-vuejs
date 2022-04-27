@@ -14,11 +14,14 @@
 
       <div class="row py-5">
         <div class="col-sm-4" v-for="card in marketing" :key="card.id">
-          <img
-            class="w-100 pb-4"
-            :src="require(`../assets/img/${card.path}`)"
-            :alt="card.id"
-          />
+          <div class="wrapper_img">
+            <img
+              class="w-100 pb-4"
+              :src="require(`../assets/img/${card.path}`)"
+              :alt="card.id"
+            />
+            <div class="filter_img"></div>
+          </div>
           <h3>{{ card.text }}</h3>
         </div>
       </div>
@@ -45,6 +48,10 @@ export default {
 
 #marketing_section {
   background-color: $color-Gray-Nurse;
+
+  .wrapper_img {
+    @include imgHover($color-Ecstasy, 94%);
+  }
 
   h2 {
     max-width: 70%;
