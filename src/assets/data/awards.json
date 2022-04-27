@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "path": "award-ac.png",
+        "path": "colora.png",
         "text": "Winner Seo Master MAGT Smart Start Award 2017"
     },
     {
         "id": 2,
-        "path": "award-bc.png",
+        "path": "colorb.png",
         "text": "Top Social Media Agencies Next Partner 2018"
     },
     {
         "id": 3,
-        "path": "award-cc.png",
+        "path": "colorc.png",
         "text": "10 Fastest Growing Abstract Solution Providers 2019"
     },
     {
         "id": 4,
-        "path": "award-dc.png",
+        "path": "colord.png",
         "text": "National Excellence Agencie Award Winner 2020"
     }
 ]

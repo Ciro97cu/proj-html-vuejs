@@ -4,7 +4,7 @@
       <div class="row align-items-center justify-content-around py-5">
         <div class="col-sm-5">
           <img
-            class="w-100"
+            class="w-100 rounded-3"
             src="../assets/img/large-testimonial.jpg"
             alt="testimonial"
           />
@@ -30,4 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  max-width: 80%;
+}
 </style>
