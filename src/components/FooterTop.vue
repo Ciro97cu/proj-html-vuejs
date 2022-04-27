@@ -8,32 +8,16 @@
             Retention.
           </h2>
           <div class="d-flex gap-3">
-            <a href="https://it-it.facebook.com/">
-              <font-awesome-icon icon="fa-brands fa-facebook-f" />
-            </a>
-            <a href="https://twitter.com/?lang=it">
-              <font-awesome-icon icon="fa-brands fa-twitter" />
-            </a>
-            <a href="https://www.instagram.com/">
-              <font-awesome-icon icon="fa-brands fa-instagram" />
-            </a>
-            <a href="https://www.youtube.com/">
-              <font-awesome-icon icon="fa-brands fa-youtube" />
-            </a>
-            <a href="https://it.linkedin.com/">
-              <font-awesome-icon icon="fa-brands fa-linkedin-in" />
-            </a>
-            <a
-              href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fit-IT&lang=en&enter_method=mandatory"
-            >
-              <font-awesome-icon icon="fa-brands fa-tiktok" />
+            <a v-for="icon in socialIcon" :key="icon.id" href="icon.link">
+              <font-awesome-icon :icon="['fa-brands', icon.icon]" />
             </a>
           </div>
         </div>
-        <div class="col-sm-2" v-for="(element, i) in footerLink" :key="i">
+
+        <div class="col-sm-2" v-for="element in footerLink" :key="element.id">
           <h6 class="pb-3">{{ element.title }}</h6>
           <ul>
-            <li class="pb-3" v-for="(text, k) in element.text" :key="k">
+            <li class="pb-3" v-for="(text, i) in element.text" :key="i">
               <a
                 href="https://github.com/Ciro97cu"
                 class="text-decoration-none"
@@ -49,6 +33,7 @@
 </template>
 
 <script>
+import socialIcon from "../assets/data/socialIcon";
 import footerLink from "../assets/data/footerLink";
 
 export default {
@@ -56,6 +41,7 @@ export default {
   data() {
     return {
       footerLink,
+      socialIcon,
     };
   },
 };

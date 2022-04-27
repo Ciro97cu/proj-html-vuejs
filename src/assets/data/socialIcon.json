@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "link": "https://it-it.facebook.com/",
+        "icon": "fa-facebook-f"
+    },
+    {
+        "id": 2,
+        "link": "https://twitter.com/?lang=it",
+        "icon": "fa-twitter"
+    },
+    {
+        "id": 3,
+        "link": "https://www.instagram.com/",
+        "icon": "fa-instagram"
+    },
+    {
+        "id": 4,
+        "link": "https://www.youtube.com/",
+        "icon": "fa-youtube"
+    },
+    {
+        "id": 5,
+        "link": "https://it.linkedin.com/",
+        "icon": "fa-linkedin-in"
+    },
+    {
+        "id": 6,
+        "link": "https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fit-IT&lang=en&enter_method=mandatory",
+        "icon": "fa-tiktok"
+    }
+]
