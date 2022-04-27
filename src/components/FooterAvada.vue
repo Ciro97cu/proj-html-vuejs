@@ -1,10 +1,20 @@
 <template>
-  <div class="bg-danger">prova</div>
+  <footer>
+    <FooterTop />
+    <FooterBottom />
+  </footer>
 </template>
 
 <script>
+import FooterTop from "./FooterTop.vue";
+import FooterBottom from "./FooterBottom.vue";
+
 export default {
   name: "FooterAvada",
+  components: {
+    FooterTop,
+    FooterBottom,
+  },
 };
 </script>
 

@@ -71,7 +71,7 @@ button {
 .row_sandy {
   margin-top: 100px;
   border-radius: 5px;
-  box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 30px 10px rgba($color-Gunsmoke, 0.5);
 
   .wrapper_img {
     width: 50px;
