@@ -74,6 +74,12 @@ export default {
   input {
     border: 2px solid $color-Gray-Nurse;
     border-radius: 5px;
+
+    &[type="text"] {
+      background: url(../assets/img/image.png) no-repeat;
+      background-position: 95% 50%;
+    }
+
     &::placeholder {
       color: $color-Tundora;
     }
