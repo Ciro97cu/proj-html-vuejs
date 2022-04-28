@@ -16,6 +16,18 @@
         <MarketingExpertCard />
       </div>
     </div>
+    <div id="special_div">
+      <div class="mb-2 p-2 bg-white d-flex flex-column align-items-center">
+        <font-awesome-icon icon="fa-solid fa-mountain" class="fa-2x" />
+        <p class="pt-1 text_bottom">Demos</p>
+      </div>
+      <div class="mb-2 p-2 bg-white d-flex flex-column align-items-center">
+        <p>
+          <span><sup>$</sup>39</span>
+        </p>
+        <p class="text_bottom">On Sale</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,6 +49,27 @@ export default {
 #jumbo {
   background-image: url(../assets/img/marketing-intro.jpg);
   background-size: cover;
+  position: relative;
+
+  #special_div {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+
+    & > div {
+      border-radius: 10px;
+    }
+
+    span {
+      color: rgb(97, 201, 97);
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .text_bottom {
+      font-weight: 500;
+    }
+  }
 
   .row {
     min-height: 600px;

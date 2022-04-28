@@ -10,6 +10,7 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { faSignal } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMountain } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -19,7 +20,7 @@ import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faPhone, faChevronDown, faArrowRight, faCircleCheck, faSignal, faPlus, faMagnifyingGlass, faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn, faTiktok)
+library.add(faPhone, faChevronDown, faArrowRight, faCircleCheck, faSignal, faPlus, faMagnifyingGlass, faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn, faTiktok, faMountain)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
