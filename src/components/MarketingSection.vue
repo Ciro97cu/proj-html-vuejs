@@ -16,13 +16,13 @@
         <div class="col-sm-4" v-for="card in marketing" :key="card.id">
           <div class="wrapper_img">
             <img
-              class="w-100 pb-4"
+              class="w-100 h-100"
               :src="require(`../assets/img/${card.path}`)"
               :alt="card.id"
             />
             <div class="filter_img"></div>
           </div>
-          <h3>{{ card.text }}</h3>
+          <h3 class="pt-4">{{ card.text }}</h3>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ export default {
   background-color: $color-Gray-Nurse;
 
   .wrapper_img {
-    @include imgHover($color-Ecstasy, 94%);
+    @include imgHover($color-Ecstasy, 4/3);
   }
 
   h2 {

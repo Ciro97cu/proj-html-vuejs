@@ -6,13 +6,13 @@
         <div class="col-sm-4" v-for="person in trust" :key="person.id">
           <div class="wrapper_img">
             <img
-              class="w-100 pb-4"
+              class="w-100 h-100"
               :src="require(`../assets/img/${person.path}`)"
               :alt="person.id"
             />
             <div class="filter_img"></div>
           </div>
-          <h4 class="pb-4">{{ person.title }}</h4>
+          <h4 class="py-4">{{ person.title }}</h4>
           <h3 class="pb-2">{{ person.value }}</h3>
           <p>{{ person.info }}</p>
         </div>
@@ -48,7 +48,7 @@ h2 {
 
 .col-sm-4 {
   .wrapper_img {
-    @include imgHover($color-Ecstasy, 85.3%);
+    @include imgHover($color-Ecstasy, 2/3);
   }
 
   h4 {
