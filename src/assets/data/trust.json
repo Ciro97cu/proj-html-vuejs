@@ -4,20 +4,47 @@
         "path": "case-studies-1.jpg",
         "title": "How Spaces attracted five million visitors by improving the content",
         "value": "200%",
-        "info": "Higher revenue from digital"
+        "info": "Higher revenue from digital",
+        "toggle": true
     },
     {
         "id": 2,
         "path": "case-studies-4.jpg",
         "title": "Creativity helped Hemisferio to increase their brand reach vertically",
         "value": "10x",
-        "info": "Sales increase with the same ad spend"
+        "info": "Sales increase with the same ad spend",
+        "toggle": true
     },
     {
         "id": 3,
         "path": "case-studies-6.jpg",
         "title": "How DigitalBox used Al-powered data insight to boost sales",
         "value": "3-year",
-        "info": "Partnership with Avada Consultant"
+        "info": "Partnership with Avada Consultant",
+        "toggle": true
+    },
+    {
+        "id": 4,
+        "path": "case-studies-5.jpg",
+        "title": "How Spaces attracted five million visitors by improving the content",
+        "value": "200%",
+        "info": "Higher revenue from digital",
+        "toggle": false
+    },
+    {
+        "id": 5,
+        "path": "case-studies-5.jpg",
+        "title": "Creativity helped Hemisferio to increase their brand reach vertically",
+        "value": "10x",
+        "info": "Sales increase with the same ad spend",
+        "toggle": false
+    },
+    {
+        "id": 6,
+        "path": "case-studies-5.jpg",
+        "title": "How DigitalBox used Al-powered data insight to boost sales",
+        "value": "3-year",
+        "info": "Partnership with Avada Consultant",
+        "toggle": false
     }
 ]

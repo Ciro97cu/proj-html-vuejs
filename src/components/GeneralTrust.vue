@@ -1,24 +1,28 @@
 <template>
   <div>
     <div class="container-sm py-5">
-      <h2 class="text-center pb-5">Trusted by Leading Organizations</h2>
+      <h2 class="text-center">Trusted by Leading Organizations</h2>
       <div class="row pb-5">
         <div class="col-sm-4" v-for="person in trust" :key="person.id">
-          <div class="wrapper_img">
-            <img
-              class="w-100 h-100"
-              :src="require(`../assets/img/${person.path}`)"
-              :alt="person.id"
-            />
-            <div class="filter_img"></div>
+          <div v-if="person.toggle">
+            <div class="wrapper_img mt-5">
+              <img
+                class="w-100 h-100"
+                :src="require(`../assets/img/${person.path}`)"
+                :alt="person.id"
+              />
+              <div class="filter_img"></div>
+            </div>
+            <h4 class="py-4">{{ person.title }}</h4>
+            <h3 class="pb-2">{{ person.value }}</h3>
+            <p>{{ person.info }}</p>
           </div>
-          <h4 class="py-4">{{ person.title }}</h4>
-          <h3 class="pb-2">{{ person.value }}</h3>
-          <p>{{ person.info }}</p>
         </div>
       </div>
       <div class="row justify-content-center pb-5">
-        <button class="btn col-auto">Read More Case Studies</button>
+        <button class="btn col-auto" @click="displayMore()">
+          Read More Case Studies
+        </button>
       </div>
     </div>
   </div>
@@ -33,6 +37,14 @@ export default {
     return {
       trust,
     };
+  },
+  methods: {
+    displayMore: function () {
+      console.log(trust);
+      for (let i = 3; i < 6; i++) {
+        trust[i].toggle = !trust[i].toggle;
+      }
+    },
   },
 };
 </script>
