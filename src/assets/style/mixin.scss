@@ -12,9 +12,10 @@
 }
 
 @mixin navHover($colorHover) {
+
     &:hover {
         color: $colorHover;
-        border-bottom: 1px solid $colorHover;
+        box-shadow: 0 1.5px 0 $colorHover;
         cursor: pointer;
     }
 }

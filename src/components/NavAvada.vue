@@ -14,7 +14,7 @@
         <div class="col-auto">
           <ul>
             <li
-              class="d-inline-block px-3"
+              class="d-inline-block mx-3 pb-1"
               v-for="item in navLink"
               :key="item.name"
             >
