@@ -24,4 +24,19 @@ export default {
 <style lang="scss">
 @import "./assets/style/import.scss";
 @import "./assets/style/resets.scss";
+@import "./assets/style/variables.scss";
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: white;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $color-Ecstasy-Op;
+  border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: $color-Ecstasy;
+}
 </style>
