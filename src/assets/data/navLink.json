@@ -1,26 +1,32 @@
 [
     {
         "name": "Home",
+        "link": "#",
         "dropdown": true
     },
     {
         "name": "Services",
+        "link": "#services",
         "dropdown": true
     },
     {
         "name": "Why US",
+        "link": "#plan_container",
         "dropdown": false
     },
     {
         "name": "Case Studies",
+        "link": "#team_container",
         "dropdown": false
     },
     {
         "name": "About",
+        "link": "#marketing_section",
         "dropdown": false
     },
     {
         "name": "Blog",
+        "link": "#contact_container",
         "dropdown": false
     }
 ]

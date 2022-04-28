@@ -14,15 +14,16 @@
         <div class="col-auto">
           <ul>
             <li
-              class="d-inline-block mx-3 pb-1"
+              class="d-inline-block mx-3"
               v-for="item in navLink"
               :key="item.name"
             >
-              {{ item.name }}
-              <font-awesome-icon
-                v-if="item.dropdown"
-                icon="fa-solid fa-chevron-down"
-              />
+              <a class="pb-1" :href="item.link"
+                >{{ item.name }}
+                <font-awesome-icon
+                  v-if="item.dropdown"
+                  icon="fa-solid fa-chevron-down"
+              /></a>
             </li>
           </ul>
         </div>
@@ -71,7 +72,7 @@ export default {
   color: $color-Ecstasy;
 }
 
-li {
+a {
   font-size: 12px;
   @include navHover($color-Ecstasy);
 }
