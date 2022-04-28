@@ -40,7 +40,6 @@ export default {
   },
   methods: {
     displayMore: function () {
-      console.log(trust);
       for (let i = 3; i < 6; i++) {
         trust[i].toggle = !trust[i].toggle;
       }
