@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="header_avada">
     <NavAvada class="bg-white" />
     <JumboAvada />
   </div>

@@ -21,6 +21,13 @@
         @init="botStart"
         @msg-send="msgSend"
       />
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a href="#header_avada">
+            <button class="btn">back to top</button>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -82,11 +89,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style/variables.scss";
+@import "../assets/style/mixin.scss";
+
 em {
   font-size: 14px;
 
   .mini_bullet {
     font-size: 20px;
   }
+}
+
+button {
+  @include button($color-Ecstasy-Op, $color-Ecstasy, $color-Ecstasy, white);
 }
 </style>
