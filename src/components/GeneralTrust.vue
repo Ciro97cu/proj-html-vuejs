@@ -21,7 +21,7 @@
       </div>
       <div class="row justify-content-center pb-5">
         <button class="btn col-auto" @click="displayMore()">
-          Read More Case Studies
+          {{ changeText }}
         </button>
       </div>
     </div>
@@ -36,13 +36,22 @@ export default {
   data() {
     return {
       trust,
+      controlOnClick: false,
     };
   },
   methods: {
     displayMore: function () {
+      this.controlOnClick = !this.controlOnClick;
       for (let i = 3; i < 6; i++) {
         trust[i].toggle = !trust[i].toggle;
       }
+    },
+  },
+  computed: {
+    changeText() {
+      return this.controlOnClick
+        ? "Read less case studies"
+        : "Read More Case Studies";
     },
   },
 };
